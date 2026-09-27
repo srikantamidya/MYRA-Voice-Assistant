@@ -25,12 +25,14 @@ jobs:
 
       - name: Make gradlew executable
         run: chmod +x gradlew
+        working-directory: MYRA-Voice-Assistant
 
       - name: Build APK with Gradle
         run: ./gradlew assembleDebug --no-daemon
+        working-directory: MYRA-Voice-Assistant
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: MYRA-App
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: MYRA-Voice-Assistant/app/build/outputs/apk/debug/app-debug.apk
