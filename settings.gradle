@@ -1,0 +1,2 @@
+rootProject.name = "MYRA-Voice-Assistant"
+include ':app'
