@@ -7,7 +7,7 @@ pluginManagement {
 }
 
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.ALLOW_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
@@ -16,4 +16,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "MYRA-Voice-Assistant"
 include ':app'
-
